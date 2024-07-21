@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Endereco;
-use App\Models\TipoEndereco;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
@@ -18,6 +17,7 @@ class EnderecoController extends Controller
     {
         DB::beginTransaction();
 
+        try {
         // retornar enderecos
         $enderecos = Endereco::select('id_endereco')
                             ->where('pessoa_id', $request->pessoa_id)
@@ -42,11 +42,17 @@ class EnderecoController extends Controller
         // false: É o endereço atual
         $data['historico']      = false;
 
-        Endereco::create($data);
-
         DB::commit();
 
+        // save endereços
+        Endereco::create($data);
+
         return json_encode($data);
+
+        } catch (\Exception $e) {
+            DB::rollback();
+            return "Error:  " . $e->getMessage();
+        }
     }
 
 
