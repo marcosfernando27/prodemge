@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    h1{
+        @apply text-3xl font-light pt-3 pb-10
+    }
+
+    .icon_h1{
+        @apply h-9 w-9 float-start mr-2
+    }
+
+    .icon_btn{
+        @apply h-4 w-4 float-start mr-2
+    }
+
+    .btn-primary{
+        @apply text-white bg-[#1351B4] hover:bg-blue-800 mb-10 font-medium rounded-md text-base px-4 py-2 text-center mr-2 focus:ring-4 focus:outline-none focus:ring-blue-300
+    }
+
+    .btn-primary-outline{
+        @apply px-1 py-1 border-2 text-base text-center text-[#1351B4] hover:text-white border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-md
+    }
+
+    .form-control{
+        @apply w-full bg-white border border-gray-300 px-2 rounded-md py-[0.4em] shadow-sm hover:bg-white focus:outline-none focus:border-[#1351B4] text-[1.1em]
+    }
+
+    .btn-default{
+        @apply mb-2 md:mb-0 bg-gray-600 px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-white rounded-md  hover:shadow-lg hover:bg-gray-500
+    }
+}
+
+:disabled{
+    background: #ddd;
+}
