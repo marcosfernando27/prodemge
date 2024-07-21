@@ -9,7 +9,7 @@ Rodar comando:
 - composer update
 
 ## Vue 3
-- Já foi o comando: npm run build
+- Já foi rodado o comando: npm run build
 
 ## Banco de dado MySql
 - Foi criado migrations
