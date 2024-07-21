@@ -42,10 +42,10 @@ class EnderecoController extends Controller
         // false: É o endereço atual
         $data['historico']      = false;
 
-        DB::commit();
-
         // save endereços
         Endereco::create($data);
+
+        DB::commit();
 
         return json_encode($data);
 
