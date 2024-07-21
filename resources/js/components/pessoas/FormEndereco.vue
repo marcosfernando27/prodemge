@@ -4,7 +4,7 @@
 
 <div class="flex flex-wrap gap-x-5 gap-y-4 p-4">
     <div class="w-full lg:w-72">
-        <label for="tipo_endereco">Selecione o tipo de endereço:</label>
+        <label for="tipo_endereco">Selecione o tipo de endereço: *</label>
 
         <select
             id="tipo_endereco"
@@ -26,7 +26,7 @@
 <div class="flex flex-wrap gap-x-5 gap-y-4 p-4">
     <div class="w-full lg:w-72">
 
-        <label for="">CEP <small>(pressione tab após digitar o cep)</small></label>
+        <label for="">CEP * <small>(pressione tab após digitar o cep)</small></label>
         <input
             type="text"
             id="cep"

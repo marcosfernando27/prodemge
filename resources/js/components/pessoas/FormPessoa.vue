@@ -25,7 +25,7 @@
     </div>
 
      <div class="w-full lg:w-52">
-        <label for="cpf">CPF</label>
+        <label for="cpf">CPF *</label>
         <input
             type="text"
             v-model="formData.cpf"
@@ -66,7 +66,7 @@
 
 <div class="flex flex-wrap gap-x-5 gap-y-4 p-4">
     <div class="w-full lg:w-52">
-        <label for="cpf">Telefone</label>
+        <label for="cpf">Telefone *</label>
         <input
             type="text"
             v-model="formData.telefone"

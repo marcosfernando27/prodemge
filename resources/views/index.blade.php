@@ -1,8 +1,8 @@
-@include('header')
-
 @section('title')
     Gestão de Pessoas
 @stop
+
+@include('header')
 
 @include('navbar')
 
