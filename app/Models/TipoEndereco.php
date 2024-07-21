@@ -19,7 +19,7 @@ class TipoEndereco extends Model
         'tipo'
     ];
 
-    public function endereos(){
+    public function enderecos(){
         return $this->hasMany(Endereco::class, 'tipo_endereco_id', 'id_tipo_endereco');
     }
 }

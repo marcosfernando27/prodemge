@@ -22,4 +22,8 @@ class Pessoa extends Model
         'telefone',
         'email'
     ];
+
+    public function enderecos(){
+        return $this->hasMany(Endereco::class, 'pessoa_id', 'id_pessoa');
+    }
 }

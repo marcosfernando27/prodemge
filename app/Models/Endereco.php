@@ -31,4 +31,8 @@ class Endereco extends Model
     public function tipo_endereco(){
         return $this->belongsTo(TipoEndereco::class, 'tipo_endereco_id');
     }
+
+    public function pessoas(){
+        return $this->belongsTo(Pessoa::class, 'pessoa_id');
+    }
 }
