@@ -6,6 +6,7 @@
 ## Projeto Gestão de Pessoas
 
 Rodar comando:
+- composer install
 - composer update
 
 ## Vue 3
