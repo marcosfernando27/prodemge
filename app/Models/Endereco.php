@@ -9,8 +9,6 @@ class Endereco extends Model
 {
     use HasFactory;
 
-    use HasFactory;
-
     protected $primaryKey = 'id_endereco';
 
     protected $table = 'enderecos';
